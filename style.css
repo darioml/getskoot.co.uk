@@ -5,7 +5,7 @@ html,body {
 }
 
 body {
-	background: #fff url('bg.png') center center fixed;
+	background: #fff url('img/bg.png') center center fixed;
 
 	/*background: #403677;*/
 	color: white;
@@ -111,7 +111,7 @@ body {
 
 
 .footer {
-	background: #403677;
+	background: #403677;	
 	color: #ccc;
 	font-weight: 100;
 	padding: 50px 0;
