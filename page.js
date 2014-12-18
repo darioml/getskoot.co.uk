@@ -7,12 +7,16 @@ $(function() {
 		} else {
 			$(".header").removeClass("small");
 		}
+
+		$("#test1").text(window.height)
+		$("#test2").text($(window).height())
+		$("#test3").text($(window).innerHeight())
+
 	});
 
 	var makeHeight = function() {
 		if ($window.width() < 600) {
-			$('html').css('height', $(window).height())
-			$('body').css('height', $(window).height())
+
 		}
 	}
 	makeHeight();
