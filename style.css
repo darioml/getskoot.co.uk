@@ -15,6 +15,7 @@ body {
 
 .header {
 	position: fixed;
+	z-index: 100;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -27,7 +28,12 @@ body {
 }
 
 .header .container .logo {
-	height: 100px;
+	height: 70px;
+}
+@media (min-width: 768px) {
+	.header .container .logo {
+		height: 100px;
+	}
 }
 .header .container .order {
 	margin-top: 30px;
@@ -38,6 +44,7 @@ body {
 }
 
 .header.small {
+	background: #fff;
 	background: rgba(255, 255, 255, 0.8);
 }
 .header.small .container .logo {
@@ -61,6 +68,16 @@ body {
 	text-align: center;
 	padding-top: 190px;
 }
+.cover #demowindow {
+	width: 410px;
+	height: 290px;
+}
+@media (min-width: 768px) {
+	.cover #demowindow {
+		width: 700px;
+		height: 450px;
+	}
+}
 
 
 
@@ -80,13 +97,13 @@ body {
 	margin-bottom: 20px;
 }
 
-.team .container .col-sm-2 {
+.team .container .col-sm-2 p {
 	font-size: 22px;
+	margin-top: 5px;
 	font-weight: 100;
 }
 .team .container .col-sm-2 img {
 	max-width: 100%;
-
 }
 
 
@@ -113,7 +130,7 @@ body {
 .footer {
 	background: #403677;	
 	color: #ccc;
-	font-weight: 100;
+	font-weight: 200;
 	padding: 50px 0;
 }
 
