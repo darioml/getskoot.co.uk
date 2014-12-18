@@ -8,7 +8,7 @@ $(function() {
 			$(".header").removeClass("small");
 		}
 
-		$("#test1").text(window.height)
+		$("#test1").text($(document).height())
 		$("#test2").text($(window).height())
 		$("#test3").text($(window).innerHeight())
 
