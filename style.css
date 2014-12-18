@@ -5,8 +5,8 @@ html,body {
 }
 
 body {
-	background: #fff url('img/bg.png') center center fixed;
-
+	/*background: #fff url('img/bg.png') center center fixed;*/
+	background: white;
 	/*background: #403677;*/
 	color: white;
 }
@@ -19,12 +19,14 @@ body {
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding: 10px 0px;
+	padding: 10px 0px 20px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 .header .container .logo {
@@ -45,7 +47,7 @@ body {
 }
 @media (min-width: 768px) {
 	.header .container .logo {
-		height: 100px;
+		height: 90px;
 	}
 	.header .container .order {
 		margin-top: 30px;
@@ -58,6 +60,7 @@ body {
 
 .header.small {
 	background: #fff;
+	padding: 10px 0px 10px;
 	background: rgba(255, 255, 255, 0.8);
 }
 .header.small .container .logo {
@@ -73,8 +76,14 @@ body {
 
 
 
+
+
+
+
+
 .cover {
 	min-height: 100%;
+	background: url('img/bg.png') 50% 0 fixed; 
 	width: 100%;
 }
 .cover .container{
@@ -103,13 +112,20 @@ body {
 
 
 
+
+
+
+
 .team {
 	padding-top: 50px;
 	padding-bottom: 40px;
 	min-height: 100%;
 	width: 100%;
 	text-align: center;
+	position: relative;
+	z-index: 10;
 	background: #403677;
+	box-shadow: 0 0 5px 1px #000;
 }
 
 .team .container p.lead {
@@ -118,6 +134,7 @@ body {
 }
 
 .team .container .col-sm-2 p {
+	letter-spacing: 1.4px;
 	font-size: 22px;
 	margin-top: 5px;
 	font-weight: 100;
@@ -131,16 +148,32 @@ body {
 
 
 
+
+
+
+
 .launch {
 	padding-top: 50px;
 	padding-bottom: 40px;
 	text-align: center;
-	color:#000 ;
+	color:#000;
 	min-height: 100%;
 	width: 100%;
-	background: #fff;
-
+	background: url('http://cdn.superbwallpapers.com/wallpapers/nature/spring-forest-27222-2560x1600.jpg') 50% 0 fixed;
 }
+
+.launch .text {
+	margin-top: 100px;
+	background: #fff;
+	background: rgba(255,255,255,0.6);
+	padding: 20px 0 40px;
+}
+
+
+
+
+
+
 
 
 
@@ -151,10 +184,11 @@ body {
 
 
 .footer {
-	background: #403677;	
-	color: #ccc;
+	background: #028c92;	
+	color: #fff;
 	font-weight: 200;
 	padding: 50px 0;
+	letter-spacing: 0.5px;
 }
 
 
