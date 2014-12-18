@@ -11,10 +11,11 @@ $(function() {
 
 	var makeHeight = function() {
 		if ($window.width() < 600) {
-			$('html').css('height', $(window).height())
-			$('body').css('height', $(window).height())
+			$('html').css('height', $(window).innerHeight())
+			$('body').css('height', $(window).innerHeight())
 		}
 	}
+	makeHeight();
 })
 
 
