@@ -82,8 +82,8 @@ body {
 	padding-top: 190px;
 }
 .cover #demowindow {
-	width: 330px;
-	height: 250px;
+	width: 290px;
+	height: 220px;
 }
 @media (min-width: 498px) {
 	.cover #demowindow {
