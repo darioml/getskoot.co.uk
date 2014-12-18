@@ -159,7 +159,7 @@ body {
 	color:#000;
 	min-height: 100%;
 	width: 100%;
-	background: url('img/bg2.png') 50% 0 fixed;
+	background: url('img/bg2.png') center 0 no-repeat;
 }
 
 .launch .text {
