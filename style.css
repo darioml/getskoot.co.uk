@@ -5,7 +5,9 @@ html,body {
 }
 
 body {
-	background: #403677;
+	background: #fff url('bg.png') center center fixed;
+
+	/*background: #403677;*/
 	color: white;
 }
 
@@ -52,9 +54,8 @@ body {
 
 
 .cover {
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
-	background: #fff url('bg.png') center center;
 }
 .cover .container{
 	text-align: center;
@@ -68,9 +69,10 @@ body {
 
 .team {
 	padding-top: 50px;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
-	text-align: center
+	text-align: center;
+	background: #403677;
 }
 
 .team .container p.lead {
@@ -78,9 +80,13 @@ body {
 	margin-bottom: 20px;
 }
 
-.team .container .col-md-2 {
+.team .container .col-sm-2 {
 	font-size: 22px;
 	font-weight: 100;
+}
+.team .container .col-sm-2 img {
+	max-width: 100%;
+
 }
 
 
@@ -92,7 +98,7 @@ body {
 	padding-top: 50px;
 	text-align: center;
 	color:#000 ;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	background: #fff;
 
@@ -105,6 +111,7 @@ body {
 
 
 .footer {
+	background: #403677;
 	color: #ccc;
 	font-weight: 100;
 	padding: 50px 0;
