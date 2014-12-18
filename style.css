@@ -5,7 +5,9 @@ html,body {
 }
 
 body {
-	background: #403677;
+	background: #fff url('img/bg.png') center center fixed;
+
+	/*background: #403677;*/
 	color: white;
 }
 
@@ -13,6 +15,7 @@ body {
 
 .header {
 	position: fixed;
+	z-index: 100;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -25,7 +28,12 @@ body {
 }
 
 .header .container .logo {
-	height: 100px;
+	height: 70px;
+}
+@media (min-width: 768px) {
+	.header .container .logo {
+		height: 100px;
+	}
 }
 .header .container .order {
 	margin-top: 30px;
@@ -36,6 +44,7 @@ body {
 }
 
 .header.small {
+	background: #fff;
 	background: rgba(255, 255, 255, 0.8);
 }
 .header.small .container .logo {
@@ -52,13 +61,22 @@ body {
 
 
 .cover {
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
-	background: #fff url('bg.png') center center;
 }
 .cover .container{
 	text-align: center;
 	padding-top: 190px;
+}
+.cover #demowindow {
+	width: 410px;
+	height: 290px;
+}
+@media (min-width: 768px) {
+	.cover #demowindow {
+		width: 700px;
+		height: 450px;
+	}
 }
 
 
@@ -68,9 +86,10 @@ body {
 
 .team {
 	padding-top: 50px;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
-	text-align: center
+	text-align: center;
+	background: #403677;
 }
 
 .team .container p.lead {
@@ -78,9 +97,13 @@ body {
 	margin-bottom: 20px;
 }
 
-.team .container .col-md-2 {
+.team .container .col-sm-2 p {
 	font-size: 22px;
+	margin-top: 5px;
 	font-weight: 100;
+}
+.team .container .col-sm-2 img {
+	max-width: 100%;
 }
 
 
@@ -92,7 +115,7 @@ body {
 	padding-top: 50px;
 	text-align: center;
 	color:#000 ;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	background: #fff;
 
@@ -105,8 +128,9 @@ body {
 
 
 .footer {
+	background: #403677;	
 	color: #ccc;
-	font-weight: 100;
+	font-weight: 200;
 	padding: 50px 0;
 }
 
