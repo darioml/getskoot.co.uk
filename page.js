@@ -1,25 +1,12 @@
 $(function() {
 	$( window ).scroll(function() {
 		var dist = window.pageYOffset || document.documentElement.scrollTop;
-
 		if (dist > 60) {
 			$(".header").addClass("small");
 		} else {
 			$(".header").removeClass("small");
 		}
-
-		$("#test1").text($(document).height())
-		$("#test2").text($(window).height())
-		$("#test3").text($(window).innerHeight())
-
 	});
-
-	var makeHeight = function() {
-		if ($window.width() < 600) {
-
-		}
-	}
-	makeHeight();
 })
 
 
