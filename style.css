@@ -105,6 +105,7 @@ body {
 
 .team {
 	padding-top: 50px;
+	padding-bottom: 40px;
 	min-height: 100%;
 	width: 100%;
 	text-align: center;
@@ -132,6 +133,7 @@ body {
 
 .launch {
 	padding-top: 50px;
+	padding-bottom: 40px;
 	text-align: center;
 	color:#000 ;
 	min-height: 100%;
@@ -142,7 +144,9 @@ body {
 
 
 
-
+.modal {
+	color: #333;
+}
 
 
 
